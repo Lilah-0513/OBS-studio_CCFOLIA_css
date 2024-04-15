@@ -1,0 +1,28 @@
+.MuiPaper-root > header {display: none;}
+.MuiList-root::-webkit-scrollbar {display: none !important;}
+.sc-dTSyrb header ~ div {display: none;}
+
+.MuiList-root > div > div > div > .MuiListItem-root {display: flex !important;}
+
+.MuiListItem-gutters {
+  animation-name: fadeLeftToRight;
+  animation-duration: 2s;
+}
+
+@keyframes fadeLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  } to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.MuiList-root > div {height: 100% !important;}
+.MuiList-root > div:nth-child(1) > div {
+  bottom: 0;
+  top: auto !important;
+}
+.MuiList-root>div:nth-child(1)>div>div>div {margin: 10px 10px 10px auto;}
